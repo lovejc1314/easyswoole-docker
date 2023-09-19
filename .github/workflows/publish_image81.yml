@@ -9,7 +9,7 @@ on:
 jobs:
   build_versioned_alpine_images:
     runs-on: ubuntu-22.04
-    if: github.repository == 'xuesilf/easyswoole-docker'
+    if: github.repository == 'lovejc1314/easyswoole-docker'
     name: The Alpine Image For EasySwoole
 
     steps:
