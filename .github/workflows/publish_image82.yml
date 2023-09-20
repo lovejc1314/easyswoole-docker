@@ -9,7 +9,7 @@ on:
 jobs:
   build_versioned_alpine_images:
     runs-on: ubuntu-22.04
-    if: github.repository == 'xuesilf/easyswoole-docker'
+    if: github.repository == 'lovejc1314/easyswoole-docker'
     name: The Alpine Image For EasySwoole
 
     steps:
@@ -38,7 +38,7 @@ jobs:
         with:
           context: .
           file: dockerfiles/php8/8.2.8/alpine/3.18/swoole/5.0.3/Dockerfile
-          platforms: linux/amd64,linux/arm64/v8,linux/ppc64le
+          platforms: linux/amd64,linux/arm64/v8
           push: true
           tags: |
             easyswoolexuesi2021/easyswoole:php8.2.8-alpine3.18-swoole5.0.3
